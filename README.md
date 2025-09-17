@@ -70,7 +70,7 @@
 ## Инструкция по запуску
 1. ```git clone https://github.com/mikhail0920/LabsOOPMai```.  
 2. ```bash
-   git checkout lab1```
+   git checkout lab1
 3. Запуск возможен двумя способами:
    - Использовать уже собранный файл `test_runner.exe`.  
    - Собрать проект самостоятельно командой:  
