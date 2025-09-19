@@ -71,14 +71,23 @@
 1. ```git clone https://github.com/mikhail0920/LabsOOPMai```.  
 2. ```bash
    git checkout lab1
-3. Запуск возможен двумя способами:
-   - Использовать уже собранный файл `test_runner.exe`.  
-   - Собрать проект самостоятельно командой:  
-     ```bash
-     g++ -std=c++17 closest_pair.cpp test.cpp -Igoogletest/googletest/include -Lgoogletest/build/lib -lgtest -lgtest_main -pthread -o test_runner.exe
-     ```
-4. Запустить:
+3. Собрать googletest:
    ```bash
-   ./test_runner.exe
+   cd googletest
+   mkdir build
+   cd build
+   cmake ..
+   cmake --build .
+4. Собрать проект
+   ```bash
+   cd ../../
+   mkdir build
+   cd build
+   cmake ..
+   cmake --build ..
+5. Запустить:
+   ```bash
+   test_runner.exe
+
 
 (Обратите внимание, что требуется версия g++, поддерживающая C++17)
